@@ -99,7 +99,7 @@ gulp.task("default", ["connect", "watch"]);
 // -------------------------------------
 
 gulp.task('deploy', function() {
-  file('CNAME', 'Custom domain url goes here')
+  file('CNAME', 'j-wilson.com')
     .pipe(gulp.dest('./build'));
   return gulp.src('./build/**/*')
     .pipe(ghPages());
