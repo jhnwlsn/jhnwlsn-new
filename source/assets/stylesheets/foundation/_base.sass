@@ -14,6 +14,7 @@ html
   color: $gray
   font-family: $t-fontFamily
   font-size: $t-fontSize
+  font-style: italic
   line-height: $t-lineHeight
 
 body
@@ -24,18 +25,46 @@ body
 // -------------------------------------
 
 ul, p
-  margin-bottom: $b-space
-  margin-top: 0
+  margin: 0
+
+ol
+  list-style: none
+  margin: 0
+  padding: 0
 
 li
-  margin-bottom: $b-space
+  margin-bottom: ($b-space * 0.25)
   margin-top: 0
 
 h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4
-  font-weight: 300
+h2, .h2
+  color: $gray-dark
+  font-style: normal
+  font-weight: normal
+  line-height: 1
+  margin: 0 0 ($b-space * 0.75)
+  text-transform: uppercase
+  small
+    display: block
+    font-family: $t-fontFamily
+    font-size: 0.75rem
+    margin-top: ($b-space * 0.25)
+    +respond-to($g-m)
+      display: inline
+      margin-left: ($b-space * 0.5)
+
+h1, .h1,
+  font-family: $t-fontFamily-heading
+  letter-spacing: 0.015em
+
+h2, .h2
+  font-size: 0.75rem 
+  letter-spacing: 0.125em
+
+hr
+  border: none
+    top: 1px solid $gray-light
+  margin: $b-space 0
 
 // -------------------------------------
 //   Inline Content
@@ -44,11 +73,11 @@ h4, .h4
 // ----- Links ----- //
 
 a
-  color: $blue
+  color: $yellow
   text-decoration: none
   &:hover,
   &:focus
-    color: lighten($blue, 10%)
+    color: lighten($yellow, 10%)
 
 // ----- Images ----- //
 
