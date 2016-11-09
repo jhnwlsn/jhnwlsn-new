@@ -39,13 +39,6 @@ gulp.task("connect", function() {
 
 // ----- Assets ----- //
 
-gulp.task("fonts", function() {
-  gulp.src("./source/assets/fonts/**/*")
-    .pipe(plumber())
-    .pipe(gulp.dest("./build/assets/fonts/"))
-    .pipe(connect.reload());
-});
-
 gulp.task("images", function() {
   gulp.src("./source/assets/images/**/*")
     .pipe(plumber())
@@ -83,9 +76,8 @@ gulp.task("template", function() {
     .pipe(connect.reload());
 });
 
-gulp.task("watch", ["fonts", "images", "styles", "scripts", "template"], function() {
+gulp.task("watch", ["images", "styles", "scripts", "template"], function() {
   gulp.watch(["./source/**/*.html"], ["template"]);
-  gulp.watch(["./source/assets/fonts/**/*"], ["fonts"]);
   gulp.watch(["./source/assets/images/**/*"], ["images"]);
   gulp.watch(["./source/assets/javascripts/**/*"], ["scripts"]);
   gulp.watch(["./source/assets/stylesheets/**/*"], ["styles"]);
