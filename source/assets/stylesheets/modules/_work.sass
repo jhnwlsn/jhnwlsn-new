@@ -8,11 +8,17 @@
 .work
   background: none
   color: $c-navy
+  margin-top: ($b-space * 0.5)
+  outline: none
+  padding: 0
   text-align: center
+  &:hover, &:focus
+    img
+      box-shadow: 0 0 0 2px $c-blue
   img
-    border: 2px solid white
+    border: 4px solid white
     border-radius: $b-borderRadius
-    box-shadow: 0 0 0 1px $c-blue-light
+    box-shadow: 0 0 0 2px darken(white, 15%)
     margin-bottom: ($b-space * 0.25)
   p
     font-size: 0.6rem
