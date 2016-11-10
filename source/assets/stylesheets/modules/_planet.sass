@@ -11,8 +11,10 @@
   margin: auto
   position: absolute
   right: 0
-  top: calc(100% - #{$b-space * 2})
+  top: calc(100% - #{$b-space * 1.5})
   width: $planet-size
+  +respond-to($g-s)
+    top: calc(100% - #{$b-space * 2})
 
 // -------------------------------------
 //   Modifiers
@@ -79,7 +81,7 @@
 
 .planet-glow
   background: $c-gradient-1
-  filter: blur(25px)
+  filter: blur(35px)
   height: $planet-size 
   transform: scale(1.25)
   width: $planet-size 
