@@ -3,21 +3,13 @@
 
 <div class="wrapper">
   <div class="hero">
-    <div class="profile well">
-      <div class="profile-image">
-        <img src="/assets/images/profile.jpg" />
-      </div>
-      <p>John Wilson</p>
+    <div class="hero-stars">
+      <svg height="1500" width="1500">
+        {% for i in range(0, 120) %}
+          <circle cx="750" cy="750" r="{{ i * 8 }}" fill="transparent" />
+        {% endfor %}
+      </svg>
     </div>
-
-    <div class="tagline well well--hero"> 
-      <h1 class="heading heading--xl">Designer &amp; Developer</h1>
-      <div class="cell cell--s">
-        <p>Serving business and startups by designing and creating websites with&nbsp;code.</p>
-      </div>
-    </div>  
-    
-    <img class="hero-stars" src="/assets/images/stars.png" />
     <div class="planet">
       <div class="planet-glow"></div>
       <div class="planet-eclipse"></div>
@@ -32,6 +24,20 @@
       </defs>
       <use fill="#FFF" xlink:href="#a" transform="translate(-40 -552)" fill-rule="evenodd"/>
     </svg>
+
+    <div class="profile well">
+      <div class="profile-image">
+        <img src="/assets/images/profile.jpg" />
+      </div>
+      <p>John Wilson</p>
+    </div>
+
+    <div class="tagline well well--hero"> 
+      <h1 class="heading heading--xl">Designer&nbsp;&amp; Developer</h1>
+      <div class="cell cell--s">
+        <p>Serving business and startups by designing and creating websites with&nbsp;code.</p>
+      </div>
+    </div>  
   </div>
 
   <div class="cell">

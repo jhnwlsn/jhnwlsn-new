@@ -16,8 +16,12 @@
 // -------------------------------------
 
 .cell--s
-  max-width: ($b-maxWidth * 0.4)
+  margin-left: 0
+  max-width: ($b-maxWidth * 0.2)
   padding: 0
+  +respond-to($g-s)
+    margin-left: auto
+    max-width: ($b-maxWidth * 0.4)
 
 // -------------------------------------
 //   States

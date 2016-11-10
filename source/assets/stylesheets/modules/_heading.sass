@@ -21,13 +21,19 @@
   text-align: center
 
 .heading--l
-  font-size: ($t-fontSize * 2.5)
+  font-size: ($t-fontSize * 2)
   margin-bottom: ($b-space * 0.75)
   margin-top: ($b-space * 2)
+  +respond-to($g-s)
+    font-size: ($t-fontSize * 2.5)
 
 .heading--xl
-  font-size: ($t-fontSize * 3.5)
+  font-size: ($t-fontSize * 2)
   margin-bottom: ($b-space * 0.25)
+  +respond-to($g-s)
+    font-size: ($t-fontSize * 2.75)
+  +respond-to($g-m)
+    font-size: ($t-fontSize * 3.5)
 
 // -------------------------------------
 //   States

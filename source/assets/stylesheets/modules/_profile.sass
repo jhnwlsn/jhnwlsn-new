@@ -9,7 +9,11 @@
   color: white
   display: block
   font-weight: 600
-  text-align: center
+  padding: 0 ($b-space * 0.5)
+  position: relative
+  z-index: 10
+  +respond-to($g-s)
+    text-align: center
 
 // -------------------------------------
 //   Modifiers
@@ -37,7 +41,12 @@
   border: 2px solid white
   border-radius: 50%
   display: block
-  height: ($b-space * 1.5)
-  margin: 0 auto ($b-space * 0.125)
+  height: ($b-space * 1.125)
+  margin-bottom: ($b-space * 0.125)
   overflow: hidden
-  width: ($b-space * 1.5)
+  width: ($b-space * 1.125)
+  +respond-to($g-s)
+    height: ($b-space * 1.5)
+    margin: 0 auto ($b-space * 0.125)
+    width: ($b-space * 1.5)
+
