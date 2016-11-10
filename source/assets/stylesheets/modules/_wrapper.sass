@@ -1,21 +1,18 @@
 // *************************************
 //
-//   Tagline
-//   -> Hero content
+//   Wrapper
+//   -> Site content container
 //
 // *************************************
 
-.tagline
-  padding: 0 ($b-space * 0.5)
-  position: relative
-  text-align: left
-  z-index: $z-taglines
+.wrapper
+  background: white
+  box-shadow: rgba(black, 0.25) 0 5px 75px
+  margin: 0 auto
+  max-width: $b-maxWidth
+  overflow: hidden
   +respond-to($g-s)
-    text-align: center
-  p
-    font-weight: 500
-    line-height: 1.4
-    opacity: 0.6
+    border-radius: 20px
 
 // -------------------------------------
 //   Modifiers

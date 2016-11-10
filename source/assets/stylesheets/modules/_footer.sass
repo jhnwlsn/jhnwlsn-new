@@ -1,21 +1,19 @@
 // *************************************
 //
-//   Tagline
-//   -> Hero content
+//   Footer
+//   -> End 'o the page
 //
 // *************************************
 
-.tagline
-  padding: 0 ($b-space * 0.5)
-  position: relative
-  text-align: left
-  z-index: $z-taglines
-  +respond-to($g-s)
-    text-align: center
-  p
-    font-weight: 500
-    line-height: 1.4
-    opacity: 0.6
+.footer
+  border-top: 1px solid darken(white, 5%)
+  color: lighten($c-navy, 20%)
+  margin: ($b-space * 1.25) auto ($b-space * 2)
+  max-width: ($b-maxWidth * 0.85)
+  font-family: $t-fontFamily
+  font-size: ($t-fontSize * 0.75)
+  padding: $b-space 0 0 
+  text-align: center
 
 // -------------------------------------
 //   Modifiers

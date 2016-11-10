@@ -7,18 +7,19 @@
 
 .heading
   font-family: $t-fontFamily
+  font-size: ($t-fontSize * 1.125)
   font-weight: 600
   line-height: 1.15
-  margin: 0
-  +respond-to($g-s)
-    text-align: center
+  margin: 0 0 ($b-space * 0.125)
 
 // -------------------------------------
 //   Modifiers
 // -------------------------------------
 
 .heading--center
-  text-align: center
+  text-align: left
+  +respond-to($g-s)
+    text-align: center
 
 .heading--l
   font-size: ($t-fontSize * 2)
