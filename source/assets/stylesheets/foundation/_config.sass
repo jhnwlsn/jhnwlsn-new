@@ -11,17 +11,13 @@
 
 // ----- Palette ----- //
 
-$blue: #2faae0
-$brown: #755400
-$green: #77b830
-$orange: #dc4d1f
-$yellow: #e0b83e
-
-// ----- Grayscale ----- //
-
-$gray-light: #dddddd
-$gray: #888888
-$gray-dark: #555555
+$c-black: #000F15
+$c-blue: #068FC9
+$c-blue-light: #D6ECF5
+$c-gradient-1: #53F0DF
+$c-gradient-2: #417E88
+$c-gradient-3: #154254
+$c-navy: #294450
 
 // -------------------------------------
 //   Base
@@ -32,14 +28,13 @@ $gray-dark: #555555
 $b-borderRadius: 4px
 $b-borderStyle: solid
 $b-borderWidth: 1px
-$b-border: $b-borderWidth $b-borderStyle darken($gray-light, 5%)
 $b-boxShadow: rgba(black, 0.2) 0 1px 3px 0
 $b-boxShadow-lg: rgba(black, 0.1) 0 5px 25px 0
 
 // ----- Sizing ----- //
 
 $b-space: 40px
-$b-maxWidth: 700px
+$b-maxWidth: 1200px
 
 // ----- Transitions ----- //
 
@@ -65,7 +60,7 @@ $t-lineHeight: 1.5
 
 // ----- Size ----- //
 
-$t-fontSize: 14px
+$t-fontSize: 20px
 
 // Headings
 
@@ -99,6 +94,10 @@ $g-selector: if($g-silent, unquote('%'), unquote('.'))
 // ----- Navbar ----- //
 
 $navbar-height: ($b-space * 3)
+
+// ----- Planet ----- //
+
+$planet-size: ($b-space * 10)
 
 // ----- Sidebar ----- //
 

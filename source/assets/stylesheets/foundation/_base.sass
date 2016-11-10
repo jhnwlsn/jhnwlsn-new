@@ -11,21 +11,24 @@
 html
   -webkit-font-smoothing: antialiased
   background-color: darken(white, 5%)
-  color: $gray
+  color: $c-navy
   font-family: $t-fontFamily
   font-size: $t-fontSize
-  font-style: italic
   line-height: $t-lineHeight
 
 body
   font-size: 100%
+  +respond-to($g-s)
+    padding: ($b-space * 0.5)
+  +respond-to($g-m)
+    padding: $b-space
 
 // -------------------------------------
 //   Block Content
 // -------------------------------------
 
 ul, p
-  margin: 0
+  margin: 0 0 ($b-space * 0.5)
 
 ol
   list-style: none
@@ -43,19 +46,17 @@ li
 // ----- Links ----- //
 
 a
-  color: $yellow
+  background: $c-blue-light
+  color: $c-blue
+  display: inline-block
+  padding: ($b-space * 0.125) ($b-space * 0.35)
   text-decoration: none
   &:hover,
   &:focus
-    color: lighten($yellow, 10%)
+    color: lighten($c-blue, 10%)
 
 // ----- Images ----- //
 
 img
   height: auto
   max-width: 100%
-
-// ----- Spans ----- //
-
-span
-  color: $gray-light

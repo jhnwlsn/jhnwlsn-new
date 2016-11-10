@@ -1,21 +1,23 @@
 // *************************************
 //
-//   Profile
-//   -> Picture and name 
+//   Cell 
+//   -> Width constrained content 
 //
 // *************************************
 
-.profile
-  color: white
-  display: block
-  font-weight: 600
-  text-align: center
+.cell
+  margin-left: auto
+  margin-right: auto
+  max-width: ($b-maxWidth * 0.55)
+  padding: 0 ($b-space * 0.5)
 
 // -------------------------------------
 //   Modifiers
 // -------------------------------------
 
-// .mv-module--modifier
+.cell--s
+  max-width: ($b-maxWidth * 0.4)
+  padding: 0
 
 // -------------------------------------
 //   States
@@ -33,11 +35,4 @@
 //   Submodules
 // -------------------------------------
 
-.profile-image
-  border: 2px solid white
-  border-radius: 50%
-  display: block
-  height: ($b-space * 1.5)
-  margin: 0 auto ($b-space * 0.125)
-  overflow: hidden
-  width: ($b-space * 1.5)
+// .mv-module-submodules

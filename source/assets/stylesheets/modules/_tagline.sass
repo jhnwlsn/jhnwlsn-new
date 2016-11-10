@@ -1,16 +1,19 @@
 // *************************************
 //
-//   Hero
-//   -> Website cover visual 
+//   Tagline
+//   -> Hero content
 //
 // *************************************
 
-.hero
-  background: $c-gradient-3 
-  background-image: radial-gradient(circle at 50% 125%, $c-gradient-1, $c-gradient-2, $c-gradient-3, $c-black)
-  color: white
-  overflow: hidden
-  position: relative
+.tagline
+  padding: 0 ($b-space * 0.5)
+  text-align: left
+  +respond-to($g-s)
+    text-align: center
+  p
+    font-weight: 500
+    line-height: 1.2
+    opacity: 0.6
 
 // -------------------------------------
 //   Modifiers
@@ -34,21 +37,4 @@
 //   Submodules
 // -------------------------------------
 
-.hero-stars
-  animation: rotate 360s 1000 linear
-  opacity: 0.5
-  position: absolute
-  right: 0
-  top: 0
-
-.hero-transition
-  bottom: 0
-  left: 0
-  position: absolute
-  width: 100%
-
-@keyframes rotate
-  from
-    transform: rotate(0deg) scale(1.5)
-  to
-    transform: rotate(360deg) scale(1.5)
+// .mv-module-submodules

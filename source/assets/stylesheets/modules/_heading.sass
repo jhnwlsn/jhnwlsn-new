@@ -1,21 +1,24 @@
 // *************************************
 //
-//   Profile
-//   -> Picture and name 
+//   Heading
+//   -> Heading replacement styles
 //
 // *************************************
 
-.profile
-  color: white
-  display: block
+.heading
   font-weight: 600
-  text-align: center
+  line-height: 1.15
+  margin: 0
+  +respond-to($g-s)
+    text-align: center
 
 // -------------------------------------
 //   Modifiers
 // -------------------------------------
 
-// .mv-module--modifier
+.heading--xl
+  font-size: ($t-fontSize * 3.5)
+  margin-bottom: ($b-space * 0.25)
 
 // -------------------------------------
 //   States
@@ -33,11 +36,4 @@
 //   Submodules
 // -------------------------------------
 
-.profile-image
-  border: 2px solid white
-  border-radius: 50%
-  display: block
-  height: ($b-space * 1.5)
-  margin: 0 auto ($b-space * 0.125)
-  overflow: hidden
-  width: ($b-space * 1.5)
+// .mv-module-submodules
