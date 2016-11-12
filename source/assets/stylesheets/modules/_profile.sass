@@ -6,12 +6,16 @@
 // *************************************
 
 .profile
+  background: transparent
   color: white
   display: block
   font-weight: 600
   padding: 0 ($b-space * 0.5)
   position: relative
   z-index: $z-profile
+  &:hover, &:focus
+    color: white
+    opacity: 0.85
   +respond-to($g-s)
     text-align: center
 
