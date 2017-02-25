@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="wrapper">
+  <div class="hero hero--theology">
+    <svg class="hero-transition" viewBox="0 0 1120 98" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <defs>
+        <path d="M0 541.883s300 89.5 600 89.5 600-89.5 600-89.5V650H0V541.883z" id="a"/>
+      </defs>
+      <use fill="#FFF" xlink:href="#a" transform="translate(-40 -552)" fill-rule="evenodd"/>
+    </svg>
+
+    <a class="profile well" href="/">
+      <div class="profile-image">
+        <img src="/assets/images/profile.jpg" />
+      </div>
+      <p>John Wilson</p>
+    </a>
+
+    <div class="tagline well well--l"> 
+      <h1 class="heading heading--xl">The State of&nbsp;Theology</h1>
+      <div class="cell cell--s">
+        <p>Made with Envy in 2016</p>
+      </div>
+    </div>  
+  </div>
+  
+  {% include 'nav.html' %}
+
+  <div class="well well--l">
+    <div class="cell">
+      <h2 class="heading heading--center heading--l">Background</h2>
+      <p class="mb1">Ivy is an online publishing and interactive training platform. Everyone from startups to large enterprises can use Ivy to create their own technical courses. Throughout 2015 and 2016, I designed and developed the <a href="http://ivyapp.com">marketing site</a> and was a designer for the "player" layer of the platform.</p>
+    </div>
+  </div>
+  <div class="well well--l">
+    <div class="cell cell--m">
+      <h2 class="heading heading--center heading--l">Overview</h2>
+      <p class="mb1 tac">Here's a quick rundown of the project:</p>
+      <video class="media media--video" controls>
+        <source src="/assets/videos/sample.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+  <div class="cell well well--l">
+    <div class="callout">
+      <p>Have a similar project and ready to get to work?</p>
+      <a class="button button--s" href="mailto:john@j-wilson.com">Let's Chat!</a>
+    </div>
+  </div>
+
+  {% include 'footer.html' %}
+</div>
+
+{% endblock %}
