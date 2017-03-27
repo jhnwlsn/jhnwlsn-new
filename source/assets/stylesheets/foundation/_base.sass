@@ -58,8 +58,12 @@ a
   background: $c-blue-light
   color: $c-blue
   display: inline-block
+  max-width: 370px
+  overflow: hidden
   padding: ($b-space * 0.025) ($b-space * 0.25)
   text-decoration: none
+  text-overflow: ellipsis
+  white-space: nowrap
   &:hover,
   &:focus
     color: lighten($c-blue, 10%)
