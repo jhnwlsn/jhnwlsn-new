@@ -8,6 +8,7 @@
 .work
   background: none
   color: $c-navy
+  display: block
   margin-top: ($b-space * 0.5)
   outline: none
   padding: 0
@@ -27,7 +28,10 @@
 //   Modifiers
 // -------------------------------------
 
-// .mv-module--modifier
+.work--description
+  margin-bottom: $b-space
+  margin-top: 0
+  text-align: left
 
 // -------------------------------------
 //   States
@@ -45,4 +49,7 @@
 //   Submodules
 // -------------------------------------
 
-// .mv-module-submodules
+.work-description
+  color: darken($c-gray, 15%)
+  font-size: ($t-fontSize * 0.75)
+  margin-top: ($b-space * 0.4)

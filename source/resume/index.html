@@ -1,0 +1,251 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="wrapper">
+  <div class="hero">
+    <div class="hero-stars">
+      <svg height="1500" width="1500">
+        {% for i in range(0, 120) %}
+          <circle cx="750" cy="750" r="{{ i * 8 }}" fill="transparent" />
+        {% endfor %}
+      </svg>
+    </div>
+    <div class="planet">
+      <div class="planet-glow"></div>
+      <div class="planet-eclipse"></div>
+      <div class="planet-main">
+        <div class="planet-main-peek"></div>
+      </div>
+      <div class="planet-flare"></div>
+    </div>
+    <svg class="hero-transition" viewBox="0 0 1120 98" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <defs>
+        <path d="M0 541.883s300 89.5 600 89.5 600-89.5 600-89.5V650H0V541.883z" id="a"/>
+      </defs>
+      <use fill="#FFF" xlink:href="#a" transform="translate(-40 -552)" fill-rule="evenodd"/>
+    </svg>
+
+    <a class="profile well" href="/">
+      <div class="profile-image">
+        <img src="/assets/images/profile.jpg" />
+      </div>
+      <p>John Wilson</p>
+    </a>
+
+    <div class="tagline well well--hero"> 
+      <h1 class="heading heading--l mb0">Résumé &amp; Work Samples</h1>
+    </div>  
+  </div>
+
+  <div class="cell cell--m well well--l">
+    <h2 class="heading heading--center heading--l mb15">Projects</h2>
+    <div class="g">
+      <div class="g-b g-b--12of12 g-b--m--6of12">
+        <a class="work work--description" href="https://thestateoftheology.com">
+          <img src="/assets/images/work-theology.png" />
+          <h3 class="heading">The State of Theology</h3>
+          <p>Data Visualization</p>
+          <hr />
+          <div class="work-description">
+            Ligonier Ministries hired Envy to visualize results from a theological survey. Designed and developed D3.js visualizations, animations and interactions.
+          </div>
+        </a>
+      </div>
+      <div class="g-b g-b--12of12 g-b--m--6of12">
+        <a class="work work--description" href="https://ivyapp.com">
+          <img src="/assets/images/work-ivy.png" />
+          <h3 class="heading">Ivy &ndash; Online Training</h3>
+          <p>Marketing Site &amp; Interface</p>
+          <hr />
+          <div class="work-description">
+            Ivy is a bootstraped startup for online technical instruction. Designed and developed marketing site. Lead designer for the e-learning platform.
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="g mb15">
+      <div class="g-b g-b--12of12 g-b--m--6of12">
+        <a class="work work--description" href="http://syllabusapp.com">
+          <img src="/assets/images/work-syllabus.png" />
+          <h3 class="heading">Syllabus</h3>
+          <p>Marketing Site</p>
+          <hr />
+          <div class="work-description">
+            Syllabus is a self-started LMS platform for higher education online learning. Planned, designed &amp; developed all assets.
+          </div>
+        </a>
+      </div>
+      <div class="g-b g-b--12of12 g-b--m--6of12">
+        <a class="work work--description" href="http://demo.syllabusapp.com">
+          <img src="/assets/images/work-syllabus-demo.png" />
+          <h3 class="heading">Syllabus</h3>
+          <p>Demo Platform</p>
+          <hr />
+          <div class="work-description">
+            In order to validate the concept, this demo walks users through a sample course within Syllabus. Designed &amp; developed with React.js.
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="g mb15">
+      <div class="g-b g-b--12of12 g-b--m--6of12">
+        <a class="work work--description" href="http://instagram.com/derailleuratelier">
+          <h3 class="heading">Typography</h3>
+          <hr />
+          <div class="work-description">
+            Typographic creative exercises created by hand.
+          </div>
+        </a>
+      </div>
+      <div class="g-b g-b--12of12 g-b--m--6of12">
+        <a class="work work--description" href="http://dribbble.com/jhnwlsn">
+          <h3 class="heading">Dribbble</h3>
+          <hr />
+          <div class="work-description">
+            Snapshots of various works-in-progress.
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="cell cell--m well well--l">
+      <h2 class="heading heading--center heading--l mb15">Experience</h2>
+      <section class="mb15">
+        <h3 class="heading">Made With Envy</h3>
+        <h4 class="heading heading--s">
+          Senior Designer & Front-end Developer
+          <small>February 2014 to Present</small>
+        </h4>
+        <ul>
+          <li>Work with enterprise organizations to create large-scale software solutions</li>
+          <li>Direct, organize & implement client feedback</li>
+          <li>Lead user experience, interface and creative design for a handful of products</li>
+          <li>Develop front-end systems and libraries</li>
+          <li>Experience working both remotely and on-site</li>
+        </ul>
+      </section>
+      <section class="mb15">
+        <h3 class="heading">Simple Focus</h3>
+        <h4 class="heading heading--s">
+          Designer & Front-end Developer
+          <small>October 2012 to February 2014</small>
+        </h4>
+        <ul>
+          <li>Worked with a team of designers on various marketing sites and applications</li>
+          <li>Directed, organized and implemented client feedback</li>
+        </ul>
+      </section>
+      <section class="mb15">
+        <h3 class="heading">Freelance</h3>
+        <h4 class="heading heading--s">
+          Designer & Developer
+          <small>October 2009 to Present</small>
+        </h4>
+        <ul>
+          <li>Created artwork and designed web and mobile user interfaces for dozens of clients</li>
+          <li>Developed front-end libraries and frameworks as well as low-level backend solutions</li>
+          <li>Experience working remotely with San Francisco startups</li>
+        </ul>
+      </section>
+      <section>
+        <h3 class="heading">City Hope</h3>
+        <h4 class="heading heading--s">
+          Graphic Designer
+          <small>June 2010 to January 2012</small>
+        </h4>
+        <ul>
+          <li>Helped lead creative vision for various artwork</li>
+          <li>Produced various digital and print assets week-to-week</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <div class="well well--l">
+    <div class="cell tac">
+      <h2 class="heading heading--l mb1">Education</h2>
+      <h3 class="heading">Full Sail University</h3>
+      <p class="mb1">Bachelor's in Graphic Design, Valedictorion<br />Graduated 2012</p>
+      <h3 class="heading">University of Mobile</h3>
+      <p class="mb1">Studied Worship Leadership<br />Attended August 2008 to August 2010</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="cell cell--m">
+      <div class="well well--l">
+        <h2 class="heading heading--center heading--l">References</h2>
+        <section class="mb15">
+          <h3 class="heading">Dr. Wells Wilson</h3>
+          <h4 class="heading heading--s">
+            Father &amp; General Surgeon
+            <small>Surgical Associates of the Eastern Shore</small>
+          </h4>
+          <div class="g">
+            <div class="g-b g-b--12of-12 g-b--m--4of12">
+              <strong class="mr025">Phone</strong>(251) 367-5506
+            </div>
+            <div class="g-b g-b--12of-12 g-b--m--8of12">
+              <strong class="mr025">Email</strong><a href="mailto:wells.wilson@gmail.com">wells.wilson@gmail.com</a>
+            </div>
+          </div>
+        </section>
+        <section class="mb15">
+          <h3 class="heading">Dr. Pete Sanchez, Jr.</h3>
+          <h4 class="heading heading--s">
+            Executive Pastor of Worship
+            <small>New Life Church</small>
+          </h4>
+          <div class="g">
+            <div class="g-b g-b--12of-12 g-b--m--4of12">
+              <strong class="mr025">Phone</strong>(817) 552-3600
+            </div>
+            <div class="g-b g-b--12of-12 g-b--m--8of12">
+              <strong class="mr025">Email</strong><a href="mailto:petesanchez@me.com">petesanchez@me.com</a>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h3 class="heading">Brian Katauskas</h3>
+          <h4 class="heading heading--s">
+            Pastor, Families &amp; Students
+            <small>Northland, A Church Distributed</small>
+          </h4>
+          <div class="g">
+            <div class="g-b g-b--12of-12 g-b--m--4of12">
+              <strong class="mr025">Phone</strong>(407) 718-8458
+            </div>
+            <div class="g-b g-b--12of-12 g-b--m--8of12">
+              <strong class="mr025">Email</strong><a href="mailto:brian.katauskas@northlandchurch.net">brian.katauskas@northlandchurch.net</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div class="cell tac">
+    <div class="well well--l">
+      <h2 class="heading heading--center heading--l">Contact</h2>
+      <div class="g g--s g--top mb1">
+        <div class="g-b g-b--12of12 g-b--s--6of12">
+          <strong>Email</strong>
+          <a class="button" href="mailto:john@j-wilson.com">john@j-wilson.com</a>
+        </div>
+        <div class="g-b g-b--12of12 g-b--s--6of12">
+          <strong>Phone</strong>
+          <a class="button" href="tel:+14079073166">(407) 907-3166</a>
+        </div>
+      </div>
+      <strong>Address</strong>
+      <p>5085 Cypress Branch Pt.<br />Oviedo, FL 32765</p>
+    </div>
+  </div>
+
+  {% include 'footer.html' %}
+</div>
+
+
+{% endblock %}

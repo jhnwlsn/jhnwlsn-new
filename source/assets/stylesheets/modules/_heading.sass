@@ -21,6 +21,21 @@
   +respond-to($g-s)
     text-align: center
 
+.heading--s
+  border-bottom: 2px solid lighten($c-gray, 25%)
+  color: $c-gray
+  font-size: ($t-fontSize * 0.75)
+  margin-bottom: ($b-space * 0.5)
+  margin-top: ($b-space * 0.25)
+  padding-bottom: ($b-space * 0.25)
+  small
+    display: block
+    font-weight: 400
+    margin-top: ($b-space * 0.125)
+    position: relative
+    +respond-to($g-m)
+      float: right
+
 .heading--l
   font-size: ($t-fontSize * 1.5)
   margin-bottom: ($b-space * 0.75)

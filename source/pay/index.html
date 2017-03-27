@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="wrapper">
+  <div class="hero">
+    <div class="hero-stars">
+      <svg height="1500" width="1500">
+        {% for i in range(0, 120) %}
+          <circle cx="750" cy="750" r="{{ i * 8 }}" fill="transparent" />
+        {% endfor %}
+      </svg>
+    </div>
+    <div class="planet">
+      <div class="planet-glow"></div>
+      <div class="planet-eclipse"></div>
+      <div class="planet-main">
+        <div class="planet-main-peek"></div>
+      </div>
+      <div class="planet-flare"></div>
+    </div>
+    <svg class="hero-transition" viewBox="0 0 1120 98" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <defs>
+        <path d="M0 541.883s300 89.5 600 89.5 600-89.5 600-89.5V650H0V541.883z" id="a"/>
+      </defs>
+      <use fill="#FFF" xlink:href="#a" transform="translate(-40 -552)" fill-rule="evenodd"/>
+    </svg>
+
+    <a class="profile well" href="/">
+      <div class="profile-image">
+        <img src="/assets/images/profile.jpg" />
+      </div>
+      <p>John Wilson</p>
+    </a>
+
+    <div class="tagline well well--hero"> 
+      <h1 class="heading heading--xl">Pay</h1>
+      <div class="cell cell--s">
+        <p>Pay an invoice via credit card.</p>
+      </div>
+    </div>  
+  </div>
+
+  <div class="cell cell--s well well--l">
+    <p>Payment
+    <form>
+      <input type="text" placeholder="name" />
+      <input type="text" placeholder="email" />
+      <input type="text" placeholder="invoice number" />
+      <input type="text" placeholder="credit card number" />
+      <input type="text" placeholder="month" />
+      <input type="text" placeholder="year" />
+      <input type="text" placeholder="CVC" />
+      <input type="text" placeholder="zip code" />
+    </form>
+  </div>
+
+  {% include 'footer.html' %}
+</div>
+
+
+{% endblock %}
